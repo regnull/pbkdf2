@@ -38,7 +38,8 @@
     "bundle-test": "browserify test/index.js > test/bundle.js",
     "unit": "tape test/*.js",
     "bench": "node bench/",
-    "package": "browserify browser.js -o ./build/bundle.js"
+    "package": "browserify browser.js -o ./build/pbkdf2_browsify.js",
+    "package-webpack": "webpack --mode production"
   },
   "devDependencies": {
     "benchmark": "^2.1.4",
@@ -52,7 +53,9 @@
     "create-hmac": "^1.1.4",
     "ripemd160": "^2.0.1",
     "safe-buffer": "^5.0.1",
-    "sha.js": "^2.4.8"
+    "sha.js": "^2.4.8",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1"
   },
   "standard": {
     "ignore": [
